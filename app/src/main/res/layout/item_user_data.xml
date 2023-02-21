@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    app:cardCornerRadius="10dp"
+    android:padding="10dp"
+    app:cardElevation="60dp"
+    android:layout_margin="20dp"
+
+    >
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:id="@+id/idtext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="25dp"
+            android:fontFamily="@font/aclonica"
+            android:text="1"
+            android:textColor="#69f0ae"
+            android:textSize="50sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/userName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/arbutus"
+            android:text="User Name"
+            android:textColor="#455a64"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@id/idtext"
+
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/userEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="User Email"
+
+            android:textSize="17sp"
+            android:textStyle="italic"
+           app:layout_constraintTop_toBottomOf="@id/userName"
+            app:layout_constraintStart_toEndOf="@id/idtext"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+
+            />
+
+
+        <TextView
+            android:id="@+id/userCountry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="User Email"
+
+            android:textSize="17sp"
+            android:textStyle="italic"
+            app:layout_constraintTop_toBottomOf="@id/userEmail"
+            app:layout_constraintStart_toEndOf="@id/idtext"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+
+            />
+
+
+        <TextView
+            android:id="@+id/userpassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="User Password"
+
+            android:textSize="17sp"
+            android:textStyle="italic"
+            app:layout_constraintTop_toBottomOf="@id/userCountry"
+            app:layout_constraintStart_toEndOf="@id/idtext"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+
+
+            />
+
+
+
+        <ImageView
+            android:id="@+id/deletebtn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_delete_24"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="10dp"
+            />
+
+        <ImageView
+            android:id="@+id/editbtn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_edit_24"
+            app:layout_constraintEnd_toStartOf="@id/deletebtn"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="8dp"
+
+            />
+
+
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
